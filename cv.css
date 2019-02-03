@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+#container {
+    /*
+    border: 1px solid black;
+    */
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding-left: 29px;
+    position: relative;
+}
+
+.subtext {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-right: 60px;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+section {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+article {
+    display: inline-block;
+    width: 40%;
+    border: 0px solid #333;
+}
+
+article.left {
+    margin-left: 58px;
+}
+
+article.right {
+    float: right;
+    margin-right: 58px;
+}
+
+article.right:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article div.head {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+    border-left: 30px solid #9fd114;
+    border-right: 30px solid #333;
+    box-shadow: 4px 0px 0px white inset;
+}
+
+span.letter, span.letter.thin {
+    background-color: #333;
+    color: white;
+    width: 100px;
+    height: 100px;
+    line-height: 88px;
+    -webkit-transform: skew(-30deg);
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+    display: inline-block;
+    margin-right: 16px;
+    /*box-shadow: 4px 4px 4px rgba(80, 80, 80, 0.5);*/
+}
+
+span.letter.thin {
+    width: 50px;
+    margin-right: 24px;
+}
+
+span.letter.thinner {
+    width: 25px;
+}
+
+.cube {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 100px;
+    height: 100px;
+}
+
+span.letter.green {
+    background-color: #9fd114;
+}

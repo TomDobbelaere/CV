@@ -21,10 +21,11 @@ header {
     display: block;
     text-align: right;
     font-weight: bold;
-    padding-top: 8px;
+    padding-top: 16px;
     padding-right: 60px;
     font-size: 24px;
     margin-bottom: 16px;
+    position: relative;
 }
 
 section {
@@ -36,7 +37,7 @@ section {
 article {
     display: inline-block;
     width: 40%;
-    border: 0px solid #333;
+    font-size: 12pt;
 }
 
 article.left {
@@ -62,7 +63,8 @@ article div.head {
     padding: 4px;
     border-left: 30px solid #9fd114;
     border-right: 30px solid #333;
-    box-shadow: 4px 0px 0px white inset;
+    font-size: 16pt;
+    text-transform: uppercase;
 }
 
 span.letter, span.letter.thin {
@@ -99,4 +101,33 @@ span.letter.thinner {
 
 span.letter.green {
     background-color: #9fd114;
+}
+
+.wideblock {
+    font-weight: bold;
+    width: 130px;
+    display: inline-block;
+    color: white;
+    background-color: #333;
+    border: 1px solid #333;
+    padding: 4px;
+}
+
+.wideblock + span {
+    border: 1px solid #333;
+    border-top: none;
+    border-left: none;
+    padding: 4px;
+    width: 186px;
+    display: inline-block;
+    text-align: right;
+}
+
+
+article.details div:first-child .wideblock + span {
+    border-top: 1px solid #333;
+}
+
+article.details div:last-child .wideblock + span {
+    border-bottom: 1px solid #333;
 }

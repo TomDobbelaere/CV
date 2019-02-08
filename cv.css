@@ -17,6 +17,8 @@ header {
     position: relative;
 }
 
+
+
 .subtext {
     display: block;
     text-align: right;
@@ -24,7 +26,7 @@ header {
     padding-top: 16px;
     padding-right: 60px;
     font-size: 24px;
-    margin-bottom: 16px;
+    margin-bottom: 48px;
     position: relative;
 }
 
@@ -49,10 +51,10 @@ article.right {
     margin-right: 58px;
 }
 
-article.right:after {
+.clearfix:after {
     content: "";
-    display: table;
     clear: both;
+    display: table;
 }
 
 article div.head {
@@ -109,25 +111,152 @@ span.letter.green {
     display: inline-block;
     color: white;
     background-color: #333;
-    border: 1px solid #333;
     padding: 4px;
 }
 
-.wideblock + span {
+.wideblock.full {
+    width: 328px;
+    text-align: center;
+}
+
+.wideblock.full.white {
+    background: none;
+    color: #333;
+    background-color: white;
+    font-weight: normal;
+    text-align: right;
     border: 1px solid #333;
-    border-top: none;
-    border-left: none;
+    border-bottom: none;
+    width: 326px;
+    position: relative;
+}
+
+article div:last-child .wideblock.full.white {
+    border-bottom: 1px solid #333;
+}
+
+
+.wideblock + span {
     padding: 4px;
-    width: 186px;
+    width: 189px;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
     display: inline-block;
     text-align: right;
 }
 
-
-article.details div:first-child .wideblock + span {
-    border-top: 1px solid #333;
+div.details {
+    background-color: #333;
+    margin-bottom: 16px;
 }
 
-article.details div:last-child .wideblock + span {
-    border-bottom: 1px solid #333;
+article span {
+    background-color: white;
 }
+
+div.photo {
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+    background-image: url("photo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.wideblock.full.name {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+}
+
+.name .photo {
+    position: absolute;
+    top: -28px;
+    right: 11px;
+    border: 2px solid #333;
+}
+
+.icon {
+    position: absolute;
+    left: 4px;
+    top: 6px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon.phone {
+    background-image: url("phone.png");
+}
+
+.icon.email {
+    background-image: url("email.png");
+}
+
+.icon.linkedin {
+    background-image: url("linkedin.png");
+}
+
+.icon.github {
+    background-image: url("github.png");
+}
+
+
+ul.hardskills  {
+    list-style: none;
+    padding: 0;
+}
+
+ul.hardskills li span.skillrating {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: #333;
+    color: white;
+    padding: 2px;
+    width: 120px;
+    text-align: center;
+}
+
+
+ul.hardskills li span.skillrating.medium {
+    width: 100px;
+    background-color: #555;
+}
+
+ul.hardskills li span.skillrating.medium-low {
+    width: 80px;
+    background-color: #777;
+}
+
+ul.hardskills li {
+    margin-bottom: 1px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 2px;
+}
+
+ul.hardskills li:nth-child(even) {
+    background-color: #eee;
+}
+
+/*ul.hardskills li span:first-child {
+}
+
+ul.hardskills li span {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+ul.hardskills li span.skillrating {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 16px;
+    background-color: #333;
+    color: white;
+}*/

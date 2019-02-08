@@ -243,6 +243,33 @@ ul.hardskills li:nth-child(even) {
     background-color: #eee;
 }
 
+.schooling, .experience {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.schooling span, .experience span {
+    display: block;
+}
+
+.schooling .title, .experience .title {
+    font-weight: bold;
+}
+
+.schooling .subtitle {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.schooling .grade {
+    font-style: italic;
+}
+
+ul.responsibilities {
+    margin: 0;
+}
+
+
 /*ul.hardskills li span:first-child {
 }
 

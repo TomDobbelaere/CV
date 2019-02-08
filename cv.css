@@ -212,7 +212,7 @@ ul.hardskills  {
 ul.hardskills li span.skillrating {
     position: absolute;
     top: 0;
-    right: 0px;
+    right: -2px;
     background-color: #333;
     color: white;
     padding: 2px;
@@ -235,7 +235,7 @@ ul.hardskills li {
     margin-bottom: 1px;
     display: inline-block;
     position: relative;
-    width: 100%;
+    width: 98%;
     padding: 2px;
 }
 

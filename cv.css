@@ -65,7 +65,15 @@ article div.head {
   padding: 4px;
   font-size: 16pt;
   text-transform: uppercase;
-  border-bottom: 1px solid var(--primary-text-color);
+}
+
+article div.head:after {
+  display: block;
+  height: 1px;
+  width: 100%;
+  content: ".";
+  color: transparent;
+  background-color: var(--primary-text-color);
 }
 
 span.letter,

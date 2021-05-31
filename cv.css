@@ -70,7 +70,6 @@ article div.head {
 
 span.letter,
 span.letter.thin {
-  background-color: var(--primary-text-color);
   color: white;
   width: 100px;
   height: 100px;
@@ -101,22 +100,20 @@ span.letter.thinner {
   height: 100px;
 }
 
-span.letter.green {
-  background-color: var(--primary-color);
-}
-
 .wideblock {
   font-weight: bold;
   width: 130px;
   display: inline-block;
-  color: white;
-  background-color: var(--primary-text-color);
+  color: var(--primary-text-color);
   padding: 4px;
+}
+
+.spacer {
+  margin-bottom: 16px;
 }
 
 .wideblock.full {
   width: 328px;
-  text-align: center;
 }
 
 .wideblock.full.white {
@@ -125,27 +122,18 @@ span.letter.green {
   background-color: white;
   font-weight: normal;
   text-align: right;
-  border: 1px solid var(--primary-text-color);
-  border-bottom: none;
   width: 326px;
   position: relative;
-}
-
-article div:last-child .wideblock.full.white {
-  border-bottom: 1px solid var(--primary-text-color);
 }
 
 .wideblock + span {
   padding: 4px;
   width: 189px;
-  border-bottom: 1px solid var(--primary-text-color);
-  border-right: 1px solid var(--primary-text-color);
   display: inline-block;
   text-align: right;
 }
 
 div.details {
-  background-color: var(--primary-text-color);
   margin-bottom: 16px;
 }
 
@@ -164,8 +152,14 @@ div.photo {
 
 .wideblock.full.name {
   position: relative;
-  height: 50px;
-  line-height: 50px;
+  height: 32px;
+  line-height: 28px;
+  font-size: 24px;
+}
+
+.role {
+  text-align: right;
+  font-weight: normal;
 }
 
 .name .photo {
@@ -211,11 +205,11 @@ ul.hardskills li span.skillrating {
   position: absolute;
   top: 0;
   right: -2px;
-  background-color: var(--primary-text-color);
-  color: white;
+  color: var(--primary-text-color);
+  font-weight: bold;
   padding: 2px;
   width: 120px;
-  text-align: center;
+  text-align: right;
 }
 
 ul.hardskills li span.skillrating.medium {
@@ -234,10 +228,6 @@ ul.hardskills li {
   position: relative;
   width: 98%;
   padding: 2px;
-}
-
-ul.hardskills li:nth-child(even) {
-  background-color: #eee;
 }
 
 .schooling,

@@ -1,9 +1,8 @@
 body {
   padding-top: 32px;
   font-family: "Segoe UI", sans-serif;
-  color: var(--primary-text-color);
+  color: #222;
   --primary-color: #ff0000;
-  --primary-text-color: #222;
 }
 
 #container {
@@ -59,21 +58,13 @@ article.right {
 }
 
 article div.head {
-  color: var(--primary-text-color);
+  color: #222;
   font-weight: bold;
   text-align: center;
   padding: 4px;
   font-size: 16pt;
   text-transform: uppercase;
-}
-
-article div.head:after {
-  display: block;
-  height: 1px;
-  width: 100%;
-  content: ".";
-  color: transparent;
-  background-color: var(--primary-text-color);
+  border-bottom: 1px solid #222;
 }
 
 span.letter,
@@ -112,7 +103,7 @@ span.letter.thinner {
   font-weight: bold;
   width: 130px;
   display: inline-block;
-  color: var(--primary-text-color);
+  color: #222;
   padding: 4px;
 }
 
@@ -126,7 +117,7 @@ span.letter.thinner {
 
 .wideblock.full.white {
   background: none;
-  color: var(--primary-text-color);
+  color: #222;
   background-color: white;
   font-weight: normal;
   text-align: right;
@@ -174,7 +165,7 @@ div.photo {
   position: absolute;
   top: -28px;
   right: 11px;
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid #222;
 }
 
 .icon {
@@ -213,7 +204,7 @@ ul.hardskills li span.skillrating {
   position: absolute;
   top: 0;
   right: -2px;
-  color: var(--primary-text-color);
+  color: #222;
   font-weight: bold;
   padding: 2px;
   width: 120px;
@@ -281,6 +272,6 @@ ul.hardskills li span.skillrating {
     position: absolute;
     top: 0;
     right: 16px;
-    background-color: var(--primary-text-color);
+    background-color: #222;
     color: white;
 }*/
